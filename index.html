@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Space+Mono:700">
+</head>
+
+<body>
+    <main class="app">
+        <div class="app__logo">
+            <img src="./assets/icons/logo.svg" />
+        </div>
+        <div class="app__main">
+            <form id="form" class="app__main-container">
+                <div class="app__main-form">
+                    <div class="app__main-input-container">
+                        <label html-for="bill" class="app__main-input-label">Bill</label>
+                        <div class="app__main-input"> 
+                            <img src="./assets/icons/icon-dollar.svg" />
+                            <input id="bill" type="text" />
+                        </div>
+                    </div>
+                    <div class="app__main-button-container">
+                        <p class="app__main-input-label">Select Tip %</p>
+                        <div class="app__main-button-container-inner">
+                            <button class="app__main-button">5%</button>
+                            <button class="app__main-button">10%</button>
+                            <button class="app__main-button">15%</button>
+                            <button class="app__main-button">25%</button>
+                            <button class="app__main-button">50%</button>
+                            <button class="app__main-button app__main-button-custom">Custom</button>
+                        </div>
+                    </div>
+
+                    <div class="app__main-input-container">
+                        <label class="app__main-input-label">Number of People</label>
+                        <div class="app__main-input">
+                            <img src="./assets/icons/icon-person.svg" />
+                            <input id="noOfPeople" type="text" />
+                        </div>
+                    </div>
+                </div>
+                <div class="app__main-result">
+                    <div class="app__main-result-container">
+                        <p class="app__main-result-contents">
+                            <span>
+                                <span class="app__main-result-title">Tip Amount </span>
+                                <br />
+                                <span class="app__main-result-category">/ person</span>
+                            </span>
+                            <span id="tipAmount" class="app__main-result-total"></span>
+                        </p>
+                        <p class="app__main-result-contents">
+                            <span>
+                                <span class="app__main-result-title">Total</span>
+                                <br />
+                                <span class="app__main-result-category">/ person</span>
+                            </span>
+                            <span id="total" class="app__main-result-total"></span>
+                        </p>
+                    </div>
+                    <button type="button" class="app__main-result-button">reset</button>
+                </div>
+            </form>
+
+            <div>
+
+            </div>
+        </div>
+    </main>
+  
+    <script src="index.js"></script>
+</body>
+
+</html>
